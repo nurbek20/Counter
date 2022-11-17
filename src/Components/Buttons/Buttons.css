@@ -1,0 +1,17 @@
+.buttons button {
+    width: 150px;
+    height: 100px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.blue {
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}

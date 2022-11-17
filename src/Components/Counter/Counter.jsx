@@ -3,7 +3,7 @@ import './Counter.css'
 
 const Counter = () => {
     const [count, changeCount]=useState(0);
-    console.log("count>>>", count)
+    console.log("count>>>", count===1)
   return (
     <>
       <div className="wrapper">
@@ -12,7 +12,7 @@ const Counter = () => {
         </p>
         <div className="counter">
             <h2>{count}</h2>
-            <button onClick={()=> changeCount(count-1)}>
+            <button onClick={()=> changeCount(count===0?0:count-1)}>
                 <span>-1</span>
             </button>
             <button onClick={()=> changeCount(count+1)}>
